@@ -9,7 +9,7 @@ export const TodoItem = ({ item }) => {
         let style = {};
         switch (item.class) {
             case "Important":
-                style = { width: 20, height: 20, backgroundColor: "orange", borderRadius: 100, marginLeft: 5}
+                style = { width: 20, height: 20, backgroundColor: "red", borderRadius: 100, marginLeft: 5}
                 break;
             case "Normal":
                 style = { width: 20, height: 20, backgroundColor: "green", borderRadius: 100, marginLeft: 5}
@@ -23,7 +23,9 @@ export const TodoItem = ({ item }) => {
             <div className="container-todoItem">
                 <div className="todoItem-content-container">
                     <div className="todoItem-content">
-                        <div className="checkIcon"><FontAwesomeIcon icon={faPenToSquare} style={{width:30, height:30,color:"#5D6D7E"}}/></div>
+                        <div className="checkIcon">
+                            <FontAwesomeIcon icon={faPenToSquare} style={{width:35, height:35,color:"#5D6D7E"}}/>
+                        </div>
                         <span style={{ marginLeft: 5, fontWeight: 'bold', fontSize:17 }}>{item.content}</span>
                     </div>
                     <div className="todoItem-class" style={{marginLeft:35}}>

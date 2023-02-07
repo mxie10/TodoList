@@ -21,10 +21,6 @@ export const AuthentificatedApp = () => {
         setPopUpAddItem(true);
     })
 
-    const closePopUpWindow = useCallback(() => {
-        setPopUpAddItem(false);
-    })
-
     return (
         <main ref={ref_main} className="container-main">
             <Header navListRef={ref_navList}
@@ -33,25 +29,17 @@ export const AuthentificatedApp = () => {
                 popUpSetting={popUpSetting}
                 mainRef={ref_main}
             />
-            <NavigationList 
-                navListRef={ref_navList}
-            />
+            <NavigationList navListRef={ref_navList}/>
             <Routes>
                 <Route path={"/home"} element={<Home navListRef={ref_navList}/>}>
                     <Route index element={<Inbox />} />
-                    <Route path={"/home/inbox"} element={<Inbox />} />
+                    <Route path={"/home/inbox"} element={<Inbox mainRef={ref_main} openAddTodoItemPopUpWindow = {openAddTodoItemPopUpWindow}/>} />
                     <Route path={"/home/today"} element={<Today />} />
                 </Route>
                 <Route path="/" element={<Home navListRef={ref_navList}/>}>
-                    <Route index element={<Inbox />} />
-                </Route>
+                    <Route index element={<Inbox mainRef={ref_main} openAddTodoItemPopUpWindow ={openAddTodoItemPopUpWindow}/> } />
+                    </Route>
             </Routes>
-            <AddTodoItemPopUpWindow
-                popUp={popUpAddItem}
-                closePopUpWindow={closePopUpWindow}
-                mainRef={ref_main}>
-                <h2>Add a new task</h2>
-            </AddTodoItemPopUpWindow>
             <DropdownList
                 popUp={popUpSetting}
                 setPopUpSetting={setPopUpSetting}

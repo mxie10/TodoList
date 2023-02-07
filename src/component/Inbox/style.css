@@ -1,0 +1,9 @@
+.inbox-header {
+    display: flex;
+    align-items: center;
+}
+
+.add-todoItem-icon{
+    margin-left:10px;
+    cursor: pointer;
+}

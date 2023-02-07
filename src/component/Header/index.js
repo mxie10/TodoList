@@ -41,7 +41,7 @@ export const Header = ({navListRef,setPopUpSetting,popUpSetting,openAddTodoItemP
                 </ul>
             </div>
             <div className="container-rightIcons">
-                <FontAwesomeIcon icon={faPlus} style={{width:25, height:25, cursor:"pointer",color:"white"}} onClick={(e)=>openAddTodoItemWindow(e)}/>
+                {/* <FontAwesomeIcon icon={faPlus} style={{width:25, height:25, cursor:"pointer",color:"white"}} onClick={(e)=>openAddTodoItemWindow(e)}/> */}
                 <FontAwesomeIcon className="faUser" icon={faUser} style={{width:25, height:25,color:"white"}} onClick={()=>setPopUpSetting(!popUpSetting)}/>
             </div>
         </div>

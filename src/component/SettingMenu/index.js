@@ -7,7 +7,7 @@ import { faGear } from '@fortawesome/free-solid-svg-icons'
 import { faCircleQuestion } from '@fortawesome/free-solid-svg-icons'
 import './style.css';
 
-export const SettingMenu = ({popUp,setPopUpSetting}) => {
+export const SettingMenue = ({popUp,setPopUpSetting}) => {
 
     const settingItem = [
         { name: "My Profile", icon: faUserDoctor },
@@ -48,4 +48,4 @@ export const SettingMenu = ({popUp,setPopUpSetting}) => {
     )
 }
 
-export default SettingMenu;
+export default SettingMenue;
