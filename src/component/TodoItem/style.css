@@ -1,0 +1,46 @@
+.container-all {
+    width:100%;
+}
+
+.container-todoItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:10px;
+    padding:5px;
+    border-radius: 5px;
+}
+
+.container-todoItem:hover {
+    padding:10px;
+    background-color: rgb(199, 231, 199);
+    cursor: pointer;
+}
+/* 
+.checkIcon:hover {
+    background-color: green;
+    cursor: pointer;
+    padding:5px;
+} */
+
+/* .circle {
+    width:30px;
+    height:30px;
+    background-color:rgb(240, 110, 110);
+    border-width:5px; 
+    border-color:lightblue;
+    border-radius:100px;
+} */
+
+.todoItem-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.todoItem-type {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}

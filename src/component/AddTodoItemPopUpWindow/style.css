@@ -1,0 +1,55 @@
+.container-popup {
+    position:fixed;
+    width:100%;
+}
+
+.popup-inner {
+    position: fixed;
+    left:calc(100vw*0.25);
+    top: 20vh;
+    width:calc(100vw * 0.5);
+    height: 50vh;
+    padding:32px;
+    min-width:640px;
+    min-height:400px;
+    background-color:white;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+.popup-inner .close-btn {
+    position: absolute;
+    top:16px;
+    right:16px;
+}
+
+.input-content{
+    width:600px;
+    height:20px;
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+.submit-button-wrapper {
+    width:100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button {
+    width:400px;
+    height:30px;
+    background-color: rgb(9, 51, 165);
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: rgb(90, 75, 224);
+}
+
+

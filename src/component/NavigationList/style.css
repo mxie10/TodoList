@@ -1,0 +1,34 @@
+.nav-list-cotainer {
+    position: fixed;
+    height:100%;
+    margin-top:45px;
+}
+
+.nav-list-main-item{
+    display: flex;
+    align-items: center;
+    margin-top:15px;
+    cursor: pointer;
+    padding:10px;
+}
+
+.nav-list-main-item:hover {
+    background-color:rgb(173, 150, 150);
+}
+
+
+.container-inbox {
+    position: fixed;
+    width:65%;
+    min-width: 1000px;
+    margin-left:350px;
+    margin-top:35px;
+}
+
+.container-today{
+    position: fixed;
+    width:65%;
+    min-width: 1000px;
+    margin-left:350px;
+    margin-top:35px;
+}
